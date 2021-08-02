@@ -1,0 +1,9 @@
+# ignore all large data files
+vis/data/bike/Rocker/fronts.json
+vis/data/bike/Stay/fronts.json
+vis/data/dense_Lamp_Stability_Mass_Focal_Point/fronts.json
+vis/data/keep_Turbine_Mass_Power/designExp.json
+vis/data/keep_Turbine_Mass_Power/fronts.json
+vis/data/keep100_Gridshell_nonsymb_Morning_Power_Output_Evening_Power_Output/fronts.json
+
+
