@@ -1,0 +1,10 @@
+version: '2.3'
+
+services:
+    jscad-server:
+      build: .
+      image: jscad-server:1.0
+      container_name: jscad-server
+      ports:
+        - "8034:8096"
+      restart: unless-stopped

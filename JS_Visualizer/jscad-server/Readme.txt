@@ -1,0 +1,3 @@
+The OpenJSCAD server listens for incoming requests to generate meshes from OpenJSCAD javascript files. This is done by running a node server instance on port 8096 executing the code in run.js.
+
+For ease of use a Dockerfile is provided which is based on node and sets up everything required. The docker-compose file makes it even simpler. After installing Docker (compose comes bundled with it normally) simply navigate to this directory on the command line and execute "docker-compose up". This will start the server in detached mode (-d) which requires one to also stop it again later "docker-compose down".

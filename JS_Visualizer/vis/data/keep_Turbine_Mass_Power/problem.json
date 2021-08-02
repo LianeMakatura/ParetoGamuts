@@ -1,0 +1,95 @@
+{
+	"design_variables": [
+		{"name": "Turbine Radius", "min": 0.000000, "max": 1.000000},
+		{"name": "Turbine Height", "min": 0.000000, "max": 1.000000},
+		{"name": "Pitch Angle", "min": 0.000000, "max": 1.000000}
+	],
+	"application_variables": [
+		{"name": "Wind Speed", "min": 0.000000, "max": 1.000000}
+	],
+	"performance_metrics": [
+		{"name": "Mass", "min": 0.000000, "max": 1.000000},
+		{"name": "Power", "min": 0.000000, "max": 1.000000}
+	],
+	"mesh_provider": {
+        "type": "jscad"
+    },
+	"design_chart_options": [
+        {"type": "chart2d", 
+            "color_map": {
+                "type": "RainbowColorMap",
+                "mapping": ["a", 0],
+                "s_value": 0.5
+            }
+        }
+    ],
+	"performance_chart_options": [
+        {"type": "chart2d",
+            "color_map": {
+                "type": "RainbowColorMap",
+                "mapping": ["a", 0],
+                "s_value": 0.5
+            }
+        }
+    ],
+    "top_charts": [
+
+	],
+    "bottom_charts": [
+
+    ],
+    "extra_charts": {
+        "html_layout": "<div id=\"extra-top\" class=\"split content\" style=\"position: relative; display: flex; flex-direction: column;\">\r\n    <div id=\"design-3d\">\r\n    <\/div>\r\n<\/div>\r\n<div id=\"extra-middle\" class=\"split content\" style=\"position: relative; display: flex; flex-direction: column;\">\r\n    <div id=\"performance-3d\">\r\n    <\/div>\r\n<\/div>\r\n<div id=\"extra-bottom\" class=\"split content\" style=\"position: relative; display: flex; flex-direction: column;\">\r\n    <div id=\"error-1d\">\r\n    <\/div>\r\n<\/div>",
+        "charts": {
+            "design-3d": {
+                "data_source": {
+                    "type": "all",
+                    "show_filtered_points": false,
+                    "initial": [
+                        ["d", 0],
+                        ["d", 1],
+                        ["a", 0]
+                    ]
+                },
+                "chart": {
+                    "type": "chart3d",
+                    "color_map": {
+                        "type": "RainbowColorMap",
+                        "mapping": ["a", 0],
+                        "s_value": 0.5
+                    }
+                }
+            },
+            "performance-3d": {
+                "data_source": {
+                    "type": "all",
+                    "show_filtered_points": false,
+                    "initial": [
+                        ["p", 0],
+                        ["p", 1],
+                        ["a", 0]
+                    ]
+                },
+                "chart": {
+                    "type": "chart3d",
+                    "color_map": {
+                        "type": "GrayscaleColorMap",
+                        "mapping": ["a", 0]
+                    }
+                }
+            },
+            "error-1d": {
+                "data_source": {
+                    "type": "design",
+                    "show_filtered_points": true
+                },
+                "chart": {
+                    "type": "error",
+                    "data_file": "designExp.json",
+                    "error_mode": "nadier",
+                    "autoscale_values": false
+                }
+            }
+        }
+    }
+}

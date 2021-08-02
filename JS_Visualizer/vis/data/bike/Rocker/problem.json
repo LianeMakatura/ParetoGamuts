@@ -1,0 +1,27 @@
+{
+	"design_variables": [
+		{"name": "bulge_profile", "min": 0.000000, "max": 1.000000},
+		{"name": "frame_width", "min": 0.000000, "max": 1.000000},
+		{"name": "depth", "min": 0.000000, "max": 1.000000}
+	],
+	"application_variables": [
+		{"name": "pivotoff_y", "min": 0.000000, "max": 1.000000}
+	],
+	"performance_metrics": [
+		{"name": "Mass", "min": 0.000000, "max": 1.000000},
+		{"name": "Compliance", "min": 0.000000, "max": 1.000000}
+	],
+	"mesh_provider": {
+        "type": "jscad"
+    },
+	"design_chart_options": [{"type": "radar"}],
+	"performance_chart_options": [
+		{"type": "chart2d", 
+		 "color_map": {
+			"type": "RainbowColorMap",
+			"mapping": ["a", 0],
+			"s_value": 0.5
+		}
+		}
+	]
+}

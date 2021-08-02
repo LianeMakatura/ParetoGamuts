@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pareto Gamut Visualization</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.5.11/split.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.3"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://unpkg.com/three@0.124.0/build/three.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/@seregpie/three.text-texture"></script>
+    <script src="https://unpkg.com/@seregpie/three.text-sprite"></script>
+    <script src="libs/STLLoader.js"></script>
+    <script src="libs/OBJLoader.js"></script>
+    <script src="libs/MTLLoader.js"></script>
+    <script src="libs/STLExporter.js"></script>
+    <script src="libs/OBJExporter.js"></script>
+    <script src="libs/jszip.min.js"></script>
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/bootstrap-4.1.1.min.js"></script>
+    <script src="libs/html2canvas.min.js"></script>
+    <script src="js/pca.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/ComponentVisualizer.js"></script>
+    <script src="js/DataSource.js"></script>
+    <script src="js/ColorMap.js"></script>
+    <script src="js/ChartJS2DViewer.js"></script>
+    <script src="js/RadarViewer.js"></script>
+    <script src="js/PCAViewer.js"></script>
+    <script src="js/TriangleViewer.js"></script>
+    <script src="js/Scatter3DViewer.js"></script>
+    <script src="js/ErrorChartViewer.js"></script>
+    <script src="js/MeshViewer.js"></script>
+    <script src="js/MeshProvider.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="left-column" class="split split-horizontal">
+        <div id="left-header">
+
+        </div>
+        <div id="left-content">
+
+        </div>
+    </div>
+    <div id="middle-column" class="split split-horizontal">
+        <div id="middle-top"class="split content" style="position: relative; display: flex; flex-direction: column;">
+            <div>
+                <label for="z-threshold-input">Z-Threshold:</label>
+                <input type="number" id="z-threshold-input" min="0" max="100" value="0.0025">
+                <label for="z-num-slider-stops">Z-Num-Slider-Stops:</label>
+                <input type="number" id="z-num-slider-stops" min="0" max="1000" value="100" step="10">
+            </div>
+            <div id="z-slider-group" style="display: flex; flex-direction: column;">
+
+            </div>
+            <div>
+                <input type="checkbox" id="ck-automatic-mesh-load" checked>
+                <label for="ck-automatic-mesh-load">Automatic Mesh Reload</label>
+            </div>
+            <div id="patch-label">
+
+            </div>
+            <div id="middle-middle">
+
+            </div>
+        </div>
+        <div id="middle-bottom" class="split content" style="position: relative; display: flex; flex-direction: column;">
+
+        </div>
+    </div>
+    <div id="right-column" class="split split-horizontal">
+        <div id="right-header">
+
+        </div>
+        <div id="right-content">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+	"design_variables": [
+		{"name": "base_x", "min": 0.000000, "max": 1.000000},
+		{"name": "base_y", "min": 0.000000, "max": 1.000000},
+		{"name": "base_z", "min": 0.000000, "max": 1.000000},
+		{"name": "arm1_x", "min": 0.000000, "max": 1.000000},
+		{"name": "arm1_y", "min": 0.000000, "max": 1.000000},
+		{"name": "arm1_z", "min": 0.000000, "max": 1.000000},
+		{"name": "arm2_x", "min": 0.000000, "max": 1.000000},
+		{"name": "arm2_y", "min": 0.000000, "max": 1.000000},
+		{"name": "arm2_z", "min": 0.000000, "max": 1.000000},
+		{"name": "arm3_x", "min": 0.000000, "max": 1.000000},
+		{"name": "arm3_y", "min": 0.000000, "max": 1.000000},
+		{"name": "arm3_z", "min": 0.000000, "max": 1.000000},
+		{"name": "hand1_x", "min": 0.000000, "max": 1.000000},
+		{"name": "hand1_y", "min": 0.000000, "max": 1.000000},
+		{"name": "hand1_z", "min": 0.000000, "max": 1.000000},
+		{"name": "hand2_x", "min": 0.000000, "max": 1.000000},
+		{"name": "hand2_y", "min": 0.000000, "max": 1.000000},
+		{"name": "hand2_z", "min": 0.000000, "max": 1.000000},
+		{"name": "hand3_x", "min": 0.000000, "max": 1.000000},
+		{"name": "hand3_y", "min": 0.000000, "max": 1.000000},
+		{"name": "hand3_z", "min": 0.000000, "max": 1.000000}
+	],
+	"application_variables": [
+		{"name": "focal_point_z", "min": 0.000000, "max": 1.000000}
+	],
+	"performance_metrics": [
+		{"name": "Stability", "min": 0.000000, "max": 1.000000},
+		{"name": "Mass", "min": 0.000000, "max": 1.000000},
+		{"name": "Focal Point", "min": 0.000000, "max": 1.000000}
+	],
+	"mesh_provider": {
+        "type": "jscad"
+    },
+	"design_chart_options": [ 
+		{"type": "radar"}
+	],
+	"performance_chart_options": [
+		{"type": "triangle", 
+			"color_map": {
+				"type": "GrayscaleColorMap",
+				"mapping": "d2"
+			}
+		}]
+}
+
