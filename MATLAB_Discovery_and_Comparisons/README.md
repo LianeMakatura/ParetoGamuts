@@ -15,7 +15,7 @@ This folder contains (1) our discovery algorithm, (2) problem setups for all exa
 
 ## Pareto Gamut Discovery code
 
-All Pareto gamut code is in the folder `cleanUp_2`.
+All Pareto gamut code is in the folder `ParetoGamuts_discovery`.
 You must change the working directory in `AppDiscover.m`, line 12. Be sure to include the final `/` in the path.
 
 While developing the code, we used the term "application variable" to describe what is known in the paper as the "context variable"; they should be treated interchangably here.
@@ -49,7 +49,7 @@ Solar Roof: run `python runGridShell.py`
 
 ## Comparisons with Schulz
 
-All code for Schulz is in the folder `cleanUp_2`.
+All code for Schulz is in the folder `ParetoGamuts_discovery`.
 You must change the working directory in `MappingFunction.m`, line 51. Be sure to include the final `/` in the path.
 
 ### Running examples
