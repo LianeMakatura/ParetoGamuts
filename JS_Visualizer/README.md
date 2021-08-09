@@ -1,5 +1,11 @@
 # Pareto Gamuts: Exploring Optimal Designs Across Varying Contexts
-SIGGRAPH 2021
+## Liane Makatura, Minghao Guo, Adriana Schulz, Justin Solomon, and Wojciech Matusik
+## SIGGRAPH 2021
+
+This repository contains the code to accompany our SIGGRAPH 2021 paper, 
+[Pareto Gamuts: Exploring Optimal Designs Across Varying Contexts](http://paretogamuts.csail.mit.edu). 
+For more details, please refer to the paper.
+
 
 ## Running the visualizer
 The JS visualizer (shown in the video) comes pre-loaded with all necessary data to recreate the examples in our paper, so you do not need to run our MATLAB code.
@@ -28,3 +34,6 @@ We recommend using VSCode with the LiveServer extension; simply hit "Go Live" in
 You can select points to examine from any 2D design or performance plot (not 3D).
 To view multiple designs simultaneously, press Control. To go back to single design mode, press Control.
 To download a mesh, use `d`
+
+## JS Visualizer: Contributors 
+This code was written by Hannes Hergeth and Liane Makatura.
