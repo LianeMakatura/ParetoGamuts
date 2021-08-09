@@ -6,7 +6,7 @@ SIGGRAPH 2021
 
 This repository contains the code to accompany our SIGGRAPH 2021 paper, [Pareto Gamuts: Exploring Optimal Designs Across Varying Contexts](http://paretogamuts.csail.mit.edu). For more details, please refer to the paper.
 
-##Overview
+## Overview
 
 There are two components: the discovery algorithm and example problem specifications (written in MATLAB) and the visualizer (written in JS). 
 
