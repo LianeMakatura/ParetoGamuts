@@ -1,10 +1,13 @@
 # Pareto Gamuts: Exploring Optimal Designs Across Varying Contexts
+
 Liane Makatura, Minghao Guo, Adriana Schulz, Justin Solomon, and Wojciech Matusik
+
 SIGGRAPH 2021
 
 This repository contains the code to accompany our SIGGRAPH 2021 paper, [Pareto Gamuts: Exploring Optimal Designs Across Varying Contexts](http://paretogamuts.csail.mit.edu). For more details, please refer to the paper.
 
-#Overview
+##Overview
+
 There are two components: the discovery algorithm and example problem specifications (written in MATLAB) and the visualizer (written in JS). 
 
 The visualizer contains pre-computed data for several of the examples presented in our paper, so you can explore some of our results without needing to run the discovery code. 
